@@ -12,11 +12,9 @@ function takeANumber(katzDeli, name){
 
 function nowServing(katzDeli){
   if(katzDeli.length === 0) return "There is nobody waiting to be served!"
-  let message = ''
-  for(let i=0; i< katzDeli.length ; ++i){
-    message = `Currently serving ${katzDeli[i]}.`
-    katzDeli.shift()
-  }
+
+  const message = `Currently serving ${katzDeli[0]}.`
+  katzDeli.shift() //console.log(katzDeli)
   return message
 }
 
