@@ -10,7 +10,7 @@ function takeANumber(katzDeli, name){
 //takeANumber([], "Teddy") "Welcome, Teddy. You are number 1 in line."
 //takeANumber(["Teddy"], "Ada") "Welcome, Ada. You are number 2 in line."
 
-function nowServing(katzDeli){ 
+function nowServing(katzDeli){
   if(katzDeli.length === 0) return "There is nobody waiting to be served!"
   let message = 'The line is currently: '
   for(let i=0; i< katzDeli.length ; ++i){
