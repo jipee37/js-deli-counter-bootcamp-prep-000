@@ -12,9 +12,20 @@ function takeANumber(katzDeli, name){
 
 function nowServing(katzDeli){
   if(katzDeli.length === 0) return "There is nobody waiting to be served!"
-  let message = 'The line is currently: '
+  let message = ''
   for(let i=0; i< katzDeli.length ; ++i){
-    message += `${i+1}. ${katzDeli[i]}, `
+    message = `Currently serving ${katzDeli[i]}.`
+    katzDeli.shift()
   }
   return message
 }
+
+
+// function nowServing(katzDeli){
+//   if(katzDeli.length === 0) return "There is nobody waiting to be served!"
+//   let message = 'The line is currently: '
+//   for(let i=0; i< katzDeli.length ; ++i){
+//     message += `${i+1}. ${katzDeli[i]}, `
+//   }
+//   return message
+// }
