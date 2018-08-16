@@ -25,8 +25,7 @@ function currentLine(katzDeli){
 		    message += `${i+1}. ${katzDeli[i]}`
 		    break
     }
-	message += `${i+1}. ${katzDeli[i]}, `	
+	message += `${i+1}. ${katzDeli[i]}, `
   }
   return message
 }
-
