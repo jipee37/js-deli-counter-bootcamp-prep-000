@@ -10,4 +10,4 @@ function takeANumber(katzDeli, name){
 //takeANumber([], "Teddy") "Welcome, Teddy. You are number 1 in line."
 //takeANumber(["Teddy"], "Ada") "Welcome, Ada. You are number 2 in line."
 
-function 
+
